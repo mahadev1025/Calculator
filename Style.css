@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("images77.jpg"); /* Correct syntax for the background image */
+    background-size: cover;  /* Ensures the image covers the entire screen */
+    background-position: center;  /* Centers the image */
+}
+
+h1 {
+    position: heading;
+    left: 0;    /* Align to the left side */
+    top: 100%;   /* Vertically center */
+    transform: translateY(-50%); /* Adjust for exact vertical center */
+    margin: 0;
+    text-decoration: underline;
+    color: rgb(9, 9, 9);
+    text-shadow: 2px 2px 5px #f7a413;  /* Horizontal and vertical shadow with a blur */
+    color: rgb(9, 9, 9);
+}
+
+
+.calculator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the div */
+    padding: 20px;
+    background-color: #000000; /* Slightly lighter than the body background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px red; /* Red shadow effect */
+}
+
+/* Style for the operation buttons */
+.buttons button {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5em;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #333;
+    transition :background 0.3s;
+}
+
+/* Make chooseOperation buttons (%, /, *, +, -) have an orange background */
+.buttons button[onclick*="chooseOperation"] {
+    background-color: #333; /* Set orange background */
+    color: rgb(252, 154, 8);
+}
+.buttons button[onclick*="clearDisplay()"] {
+    background-color: #333; /* Set orange background */
+    color:rgb(252, 9, 9);
+}
+.buttons button[onclick*="backspace"] {
+    background-color: #333; /* Set orange background */
+    color:rgb(252, 9, 9);
+}
+
+.buttons button[onclick*="appendNumber"] {
+    background-color: #333; /* Set orange background */
+    color: rgb(240, 237, 234);
+}
+
+.buttons button[onclick*="calculate"] {
+    background-color: rgb(252, 154, 8); /* Set orange background */
+    color:rgb(240, 237, 234);
+}
+
+.buttons button:hover {
+    background: #444; /* Slightly lighter black on hover */
+}
+
+/* Specific style for the AC button */
+.clear {
+    background: #ff5555; /* Red color for AC button */
+    color: white;
+}
+
+#display {
+    width: 90%;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #0b0a0a;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+body {
+    font-size: 1.2em;
+}
+
+
